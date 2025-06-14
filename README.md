@@ -37,7 +37,7 @@ Play the game by building and running it locally (instructions below).
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/tictactoe.git
+   git clone https://github.com/rexbrahh/tictactoe-rust-wasm.git
    cd tictactoe
    ```
 
