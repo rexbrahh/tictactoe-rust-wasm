@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Minimax AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <p class="subtitle">Play against AI with Minimax Algorithm</p>
+        
+        <div class="game-info">
+            <div class="score-board">
+                <div class="score">
+                    <span class="label">Player (X)</span>
+                    <span id="player-score" class="score-value">0</span>
+                </div>
+                <div class="score">
+                    <span class="label">AI (O)</span>
+                    <span id="ai-score" class="score-value">0</span>
+                </div>
+                <div class="score">
+                    <span class="label">Draws</span>
+                    <span id="draw-score" class="score-value">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-status" id="game-status">Your turn! Click any cell to start.</div>
+
+        <div class="game-board" id="game-board">
+            <div class="cell" data-index="0" role="button" aria-label="Cell 0"></div>
+            <div class="cell" data-index="1" role="button" aria-label="Cell 1"></div>
+            <div class="cell" data-index="2" role="button" aria-label="Cell 2"></div>
+            <div class="cell" data-index="3" role="button" aria-label="Cell 3"></div>
+            <div class="cell" data-index="4" role="button" aria-label="Cell 4"></div>
+            <div class="cell" data-index="5" role="button" aria-label="Cell 5"></div>
+            <div class="cell" data-index="6" role="button" aria-label="Cell 6"></div>
+            <div class="cell" data-index="7" role="button" aria-label="Cell 7"></div>
+            <div class="cell" data-index="8" role="button" aria-label="Cell 8"></div>
+        </div>
+
+        <div class="controls">
+            <button id="new-game" class="btn btn-primary">New Game</button>
+            <div class="difficulty-selector">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard" selected>Hard</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
